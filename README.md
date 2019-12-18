@@ -12,5 +12,5 @@ ls
 cd Yousef-PersonalProject 
 
  Python DDOSPP.py
-----------------------------------------------------------
+
 Its for educational purposes 
