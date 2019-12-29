@@ -3,9 +3,14 @@
 -----------
 Instruction
 --------------------------------------------------------------------
-git clone 
+git clone https://github.com/oUnicorn/Yousef-PersonalProject.git
 
-cd Yousef-DDOS
+cd Desktop
+
+ls
+
+cd Yousef-PersonalProject
 
 python DDOSPP.py
 ----------------------------------------------------------
+Its for educational purposes

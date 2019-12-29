@@ -1,8 +1,3 @@
-"""
-This module provides a standard socket-like interface for Python
-for tunneling connections through SOCKS proxies.
-
-"""
 
 import socket
 import struct
