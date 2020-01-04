@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------------------------
-# HULK - HTTP Unbearable Load King
+# HULK
 
 import urllib2
 import sys

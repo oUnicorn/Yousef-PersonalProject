@@ -2,10 +2,7 @@ import os
 import sys
 import random
 
-########################################
-# Educational purpose only             #
-########################################
-# I'm not responsible for your actions #
+
 ########################################
 #  Coded by Yousef Personal Project                #
 
@@ -42,9 +39,9 @@ def ip_dos():
     os.system(("./xerxes " + ip + space) + port)
 
 print "\033[1;32m-------------------------------------------------------------------------\033[1;m"
-os.system("figlet Yousef PP")
+os.system("figlet YousefPP")
 print "\033[1;32m-------------------------------------------------------------------------\033[1;m"
-print "\033[1;32m                 Created by: Yousef PP                                   \033[1;m"
+print "\033[1;32m                 Created by: YousefPP                                   \033[1;m"
 print "\033[1;32m-------------------------------------------------------------------------\033[1;m"
 
 print "  "
@@ -69,7 +66,7 @@ if user is 1:
 if user is 2:
     os.system("clear")
     print "\033[1;32m-------------------------\033[1;m"
-    os.system("figlet Lazy")
+    os.system("figlet Yousef")
     print "\033[1;32m-------------------------\033[1;m"
     print " "
     print " 1)ip-dos"
