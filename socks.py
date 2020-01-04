@@ -1,3 +1,5 @@
+SOCKS
+
 
 import socket
 import struct
